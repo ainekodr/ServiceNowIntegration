@@ -4,7 +4,7 @@
         <misc>0</misc>
         <order>7</order>
         <published_ref/>
-        <question display_value="Depot">9652ce7504c813107f4452b4d090f7db</question>
+        <question display_value="Where would you like to pick up this item? ">9652ce7504c813107f4452b4d090f7db</question>
         <rec_misc>0</rec_misc>
         <sys_class_name>question_choice</sys_class_name>
         <sys_created_by>admin</sys_created_by>

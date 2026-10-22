@@ -80,7 +80,23 @@
 * Don't use `current.setValue('sys_class_name', 'xxx')` as this will trigger reparent flow and can cause data loss
 * Avoid `current.setAbortAction()` and generate a separate record
 * Use `producer.var1` to access variables
-*/]]></script>
+*/
+// Set the short description to reflect the item type and location
+
+current.short_description = 'Reservation: ' + current.item_type.getDisplayValue() + ' from ' + current.depot.getDisplayValue();
+
+// Set the depot field to reflect inputs from the record producer
+
+current.depot = producer.depot;
+if (producer.depot == "Other") {
+   current.other = producer.other;
+}
+
+// Set the initial state to Requested
+
+current.state = 13;
+
+]]></script>
         <secondary_owners/>
         <short_description>Submit a New Loaner Request</short_description>
         <show_variable_help_on_load>false</show_variable_help_on_load>
@@ -90,14 +106,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-10-21 05:22:15</sys_created_on>
         <sys_id>15524e7504c813107f4452b4d090f778</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>Loaner Request</sys_name>
         <sys_package display_value="Loaner Request" source="x_cdltd_loaner_r_0">f2bf26410d4413107f443dd447226c1a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Loaner Request">f2bf26410d4413107f443dd447226c1a</sys_scope>
         <sys_update_name>sc_cat_item_producer_15524e7504c813107f4452b4d090f778</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-10-21 06:07:05</sys_updated_on>
+        <sys_updated_on>2026-10-22 04:47:43</sys_updated_on>
         <table_name>x_cdltd_loaner_r_0_loaner_request</table_name>
         <taxonomy_topic/>
         <template/>
@@ -105,7 +121,7 @@
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>20</version>
+        <version>22</version>
         <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>

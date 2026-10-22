@@ -4,7 +4,7 @@
         <misc>0</misc>
         <order>3</order>
         <published_ref/>
-        <question display_value="Item type">2552ce7504c813107f4452b4d090f728</question>
+        <question display_value="What would you like to reserve?">2552ce7504c813107f4452b4d090f728</question>
         <rec_misc>0</rec_misc>
         <sys_class_name>question_choice</sys_class_name>
         <sys_created_by>admin</sys_created_by>
