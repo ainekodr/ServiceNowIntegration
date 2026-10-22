@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
     <question_choice action="INSERT_OR_UPDATE">
         <inactive>false</inactive>
-        <misc>0</misc>
         <order>5</order>
         <published_ref/>
         <question display_value="Where would you like to pick up this item? ">9652ce7504c813107f4452b4d090f7db</question>
-        <rec_misc>0</rec_misc>
         <sys_class_name>question_choice</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-10-21 05:22:19</sys_created_on>
